@@ -16,8 +16,9 @@ p<!DOCTYPE html>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
       rel="stylesheet">
-    <link rel="stylesheet" href="./assets/style/main.css">
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="/assets/style/main.css">
+    <link rel="stylesheet" href="/assets/script/main.js">
+    
   </head>
   <body>
     <header>
@@ -119,27 +120,52 @@ p<!DOCTYPE html>
         <h2 class="main_course-purpose_h2">
           コース・目的
         </h2>
-        <div class="main_course-purpose_box">
-          <div class="main_course-purpose_box_top">
-            <div class="main_course-purpose_box_top_one">
-             <p class="main_course-purpose_box_top_one_img"><img src=""></p>
-             <p class="main_course-purpose_box_top_one_text"></p>
-            </div>
-            <div class="main_course-purpose_box_two">
-             <p class="main_course-purpose_box_top_two_img"><img src=""></p>
-             <p class="main_course-purpose_box_top_two_text"></p>
-            </div>
-          </div>
-          <div class="main_course-purpose_box_bottom">
-            <div class="main_course-purpose_box_bottom_one">
-             <p class="main_course-purpose_box_bottom_one_img"><img src=""></p>
-             <p class="main_course-purpose_box_bottom_one_text"></p>
-            </div>
-            <div class="main_course-purpose_box_bottom_two">
-             <p class="main_course-purpose_box_bottom_two_img"><img src=""></p>
-             <p class="main_course-purpose_box_bottom_two_text"></p>
-            </div>
-          </div>
+        <div class="tabs">
+  <button class="tab-btn active" data-target="#grade">学年別から選ぶ</button>
+  <button class="tab-btn" data-target="#goal">目的別から選ぶ</button>
+</div>
+
+<div class="tab-content" id="grade">
+  <ul class="tab-content_box">
+    <li>
+      <p class="tab-content_box_img"><img src="/assets/image/abultmangonnaabroad_copy.jpg" alt="気合いのある"></p>
+      <a href="#"><img src="/assets/image/yajirushi.svg " alt="→" class="icon">高卒生</a>
+    </li>
+    <li>
+      <p class="tab-content_box_img"><img src="/assets/image/girl_studing_something_copy.jpg" alt="勉強している"></p>
+      <a href="#"><img src="/assets/image/yajirushi.svg " alt="→" class="icon">高校3年生</a>
+    </li>
+    <li>
+      <p class="tab-content_box_img"><img src="/assets/image/girl_boy_maybe_cople_copy.jpg" alt="勉強を教えあう"></p>
+      <a href="#"><img src="/assets/image/yajirushi.svg " alt="→" class="icon">高校2年生</a>
+    </li>
+    <li>
+      <p class="tab-content_box_img"><img src="/assets/image/girl_smiling_copy.jpg" alt="笑顔な"></p>
+      <a href="#"><img src="/assets/image/yajirushi.svg " alt="→" class="icon">高校1年生</a>
+    </li>
+  </ul>
+</div>
+
+<div class="tab-content" id="goal" style="display:none;">
+  <ul class="tab-content_box_two">
+    <li>
+      <p class="tab-content_box_img"><img src="/assets/image/pht_cource05.png.svg" alt="東大などの"></p>
+      <a href="#"><img src="/assets/image/yajirushi.svg " alt="→" class="icon">難関大学・医学部合格を目指す</a>
+    </li>
+    <li>
+      <p class="tab-content_box_img"><img src="/assets/image/pht_cource06.png.svg" alt="早稲田などの"></p>
+      <a href="#"><img src="/assets/image/yajirushi.svg " alt="→" class="icon">名門私立大学合格を目指す</a>
+    </li>
+    <li>
+      <p class="tab-content_box_img"><img src="/assets/image/pht_cource07.png.svg" alt=""></p>
+      <a href="#"><img src="/assets/image/yajirushi.svg " alt="→" class="icon">国公立大学合格を目指す</a>
+    </li>
+    <li>
+      <p class="tab-content_box_img"><img src="/assets/image/pht_cource08.png.svg" alt=""></p>
+      <a href="#"><img src="/assets/image/yajirushi.svg " alt="→" class="icon">海外の大学合格を目指す</a>
+    </li>
+  </ul>
+</div>
       </section>
       <div class="main_form">
         <p class="main_form_text">入学ご検討の方は、まずは入学説明会にお越しください</p>
@@ -147,13 +173,52 @@ p<!DOCTYPE html>
       </div>
       <section class="main_cost">
         <h2 class="main_cost_h2">費用</h2>
+         <table class="main_cost_table">
+  <tr class="only_one">
+    <th>年間講数</th>
+    <td class="only">年間授業料（税込み）</td>
+  </tr>
+  <tr>
+    <th>5講</th>
+    <td><span class="amount">24,500</span>円</td>
+  </tr>
+  <tr>
+    <th>10講</th>
+    <td><span class="amount">24,900</span>円</td>
+  </tr>
+  <tr>
+    <th>11講</th>
+    <td><span class="amount">53,900</span>円</td>
+  </tr>
+  <tr>
+    <th>12講</th>
+    <td><span class="amount">58,800</span>円</td>
+  </tr>
+  <tr>
+    <th>22講</th>
+    <td><span class="amount">107,800</span>円</td>
+  </tr>
+  <tr>
+    <th>24講</th>
+    <td><span class="amount">117,600</span>円</td>
+  </tr>
+</table>
       </section>
       <div class="main_form">
         <p class="main_form_text">入学ご検討の方は、まずは入学説明会にお越しください</p>
         <button type="button" class="button">入学説明会に申し込む</button>
       </div>
-      <section class="main_last"></section>
+      <section class="main_last_top">
+        <h2 class="main_last_text">よくあるご質問</h2>
+      </section>
+      <section class="main_last_bottom">
+        <h2 class="main_last_text">お近くの教室を探す</h2>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <small>&copy;copyright© 2023 Kira-Kira Juku All Rights Reserved.</small>
+    </footer>
+    <script src="/assets/script/jquery-3.7.1.min.js"></script>
+     <script src="/assets/script/main.js"></script>
   </body>
 </html>

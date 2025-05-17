@@ -7,6 +7,7 @@ body{
   font-family: "Noto Sans", sans-serif;
   line-height: 1.5;
   color: #000;
+  overflow-x: hidden;
 }
  html {
     font-size: calc(10 * 100vw / 375);
@@ -28,10 +29,10 @@ header{
   .header_img img{
      width: 16.3rem;
      height: 1.78rem
-     margin:2.64rem 19.4rem 2.5rem 1.7rem ;
+     margin: 2.64rem 19.4rem 2.5rem 1.7rem ;
  }
  .main_introduction{
-     background-image: url(/assets/image/main_img.png);
+     background-image: url(/assets/image/mainVIsual_sp.jpg.svg);
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
@@ -195,6 +196,7 @@ header{
   font-weight: bold;
   font-size: 2rem;
   background: linear-gradient(to right, rgba(2,113,224,1), rgba(83,162,240,1));
+  border: none;
 }
 .main_course-purpose_h2{
   width: 17rem;
@@ -206,4 +208,152 @@ header{
   width: 37.5rem;
   height: 127.8rem;
 }
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.tab-btn {
+  width: 16.4rem;
+  height: 6.6rem;
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+ border-top-left-radius: 4px;  
+  border-top-right-radius: 4px; 
+  color: rgba(51, 51, 51, 0.5);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.tab-btn.active {
+  width: 16.4rem;
+  height: 6.6rem;
+  background-color: #F2F9FF;
+  color: #333333;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.tab-content_box {
+  list-style: none;
+  padding-bottom:  6.8rem;;
+  background-color:#F2F9FF ;
+  margin-bottom: 5.1rem;
+}
+.tab-content_box_two{
+  background-color: #F2F9FF;
+  padding-bottom:  6.8rem;;
+  background-color:#F2F9FF ;
+  margin-bottom: 5.1rem;  
+}
+.tab-content li {
+  margin-bottom: 10px;
+}
+.tab-content_box_img img{
+  width: 34.3rem;
+  height: 22rem;
+  border-radius: 1.2rem;
+  margin: 2.8rem 1.6rem 1.2rem 1.6rem;
+  align-items: center;
+}
+.tab-content a {
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333333;
+  align-items: center;
+}
+.tab-content a .icon{
+  width: 1.38rem;
+  height: 1.18rem;
+  color: #005BAC;
+  margin-left: 1.6rem;
+  margin-right: .82rem;
+}
+.tab-content a:hover {
+  background-color: #f0f0f0;
+}
+.main_cost_h2{
+  display: block;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin: 6.4rem 0 2.3rem 0;
+  text-align: center;
+}
+.main_cost_table{
+  width: 34.3rem;
+  height: 45.1rem;
+  font-size: 1.6rem;
+  text-align: center;
+  border: 1.5px solid #ccc;
+  border-bottom: .8px solid #ccc;
+  border-collapse: collapse; 
+  border-spacing: 0;    
+  margin: 0 auto 6.4rem auto;
+}
+.only_one{
+  background-color: #F5F5F5;
+height: 6.5rem;
+}
+.main_cost_table th{
+  font-weight: normal;
+  border-bottom: .8px solid #ccc;
+  border-right: .8px solid #ccc;
+}
+.main_cost_table td{
+  border-bottom: .8px solid #ccc;
+  color: #F23397;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: right;
+    font-family: monospace;
+    text-align: center;
+}
 
+.amount {
+  display: inline-block;
+  width: 80px; /* 調整して「円」が縦に揃うように */
+  text-align: right;
+  font-family: monospace;
+  font-size: 3rem;
+}
+.main_cost_table .only{
+  border-bottom: .8px solid #ccc;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+.main_last_top{
+  background-image:url(/assets/image/pht_qa.jpg.svg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 17rem;
+}
+.main_last_bottom{
+   background-image:url(/assets/image/pht_classrooms.jpg.svg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 17rem;
+}
+.main_last_text{
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fff;
+  align-items: center;
+  padding-top: 7.4rem;
+  padding-left: 1.8rem;
+}
+footer small{
+  display: block;
+  color: #333333;
+  font-size: 1.3rem;
+  background-color: #DDDDDD;
+  height: 8.3rem;
+  text-align: center;
+  padding-top: 3.2rem;
+}
