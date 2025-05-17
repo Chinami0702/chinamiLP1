@@ -11,6 +11,7 @@ body{
 }
  html {
     font-size: calc(10 * 100vw / 375);
+    scroll-behavior: smooth;
 }
 @media (min-width:768px) {
      html {
@@ -254,6 +255,11 @@ header{
   border-radius: 1.2rem;
   margin: 2.8rem 1.6rem 1.2rem 1.6rem;
   align-items: center;
+  transition: transform 0.3s ease;
+}
+.tab-content_box_img img:hover {
+  transform: scale(1.2);
+  border-radius: 1.2rem;
 }
 .tab-content a {
   text-decoration: none;
@@ -331,6 +337,7 @@ height: 6.5rem;
   background-position: center;
   width: 100%;
   height: 17rem;
+  transition: background-size 0.3s ease;
 }
 .main_last_bottom{
    background-image:url(/assets/image/pht_classrooms.jpg.svg) ;
@@ -339,6 +346,11 @@ height: 6.5rem;
   background-position: center;
   width: 100%;
   height: 17rem;
+  transition: background-size 0.3s ease;
+}
+.main_last_top:hover,
+.main_last_bottom:hover{
+    background-size: 120% 120%; 
 }
 .main_last_text{
   font-size: 2.2rem;
