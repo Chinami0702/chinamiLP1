@@ -24,20 +24,112 @@ body{
      }
 }
 header{
-  height: 5rem;
-  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25); 
+  height: 7rem;
+  background-color: white;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
  }
   .header_img img{
      width: 16.3rem;
-     height: 1.78rem
-     margin: 2.64rem 19.4rem 2.5rem 1.7rem ;
+     height: 1.78rem;
+     margin:2.64rem 19.4rem 2.5rem 1.7rem ;
  }
- .main_introduction{
+ @media (min-width: 768px) {
+  header{
+    display: flex;
+    align-items: center;
+    height: 10rem;
+  }
+  header img{
+    font-size: 3.2rem;
+    width: 24rem;
+    height: 2.5rem;
+  }
+     .nav_header_list{
+      display: flex;
+      gap: 4.8rem;
+     }
+     .nav_header_list_top,
+      .nav_header_list_middle,
+      .nav_header_list_bottom,
+      .nav_header_list_special{
+        list-style: none;
+
+ }
+       .nav_header_list_top a,
+      .nav_header_list_middle a,
+      .nav_header_list_bottom a{
+        list-style: none;
+        color: #333333;
+        text-decoration: none;
+        font-size: 2rem;
+      }
+      .nav_header_list_special a{
+        color: #fff;
+       background: linear-gradient(to right, rgba(2,113,224,1), rgba(83,162,240,1));
+        border: none;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1.6rem 4.1rem;
+        border-radius: 3.1rem;
+      }
+}
+ .header_box{
      background-image: url(/assets/image/mainVIsual_sp.jpg.svg);
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
-     height: 25rem;
+     height: 25rem; 
+     margin-top: 0;
+ }
+ .header_box_logo_one{
+   margin: 3.4rem 18.4rem 3.5rem 1.6rem;
+   width: 17.5rem;
+   height: 18rem;
+ }
+ .header_box_logo{
+  display: flex;
+  width: 14.7rem;
+  height: 6.8rem;
+ }
+ @media(min-width: 768px){
+  .header_box{
+     background-image: url(/assets/image/mainVIsual_sp.jpg.svg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     height: 65rem; 
+     margin-top: 0;
+ }
+}
+ .header_box_text{
+  height: 9.2rem;
+  margin-top: 2rem;
+ }
+ .special_one{
+  font-size: 1.1rem;
+ }
+ .special{
+  font-size: 3.5rem;
+  font-family: poppins;
+  font-weight: bold;
+  color: #F11F8D;
+  font-style: italic;
+  text-align: center;
+ }
+.special_two{
+  font-size: 1.4rem;
+}
+h1{
+  font-size: 2.4rem;
+  font-weight: heavy;
+  color: #005BAC;
+}
+ .header_box_logo img{
+  width: 2.4rem;
+  height: 6.8rem;
  }
  .main_button_list{
      width: 25rem;
@@ -45,6 +137,39 @@ header{
      margin:2.5rem auto;
      
  }
+ @media(min-width: 768px){
+   .header_box_logo_one{
+     margin: 10rem auto;
+     width: 70rem;
+ }
+ .header_box_logo img{
+  width: 5.2rem;
+  height: 15rem;
+ }
+ .header_box_logo{
+  width: 33rem;
+  height: 15rem;
+  gap: 1.5rem;
+ }
+ .special_one{
+  font-size: 2rem;
+  width: 18rem;
+ }
+ .special{
+  font-size: 5rem;
+  padding: 2.6rem;
+ }
+ .header_box_text{
+  height: 22.4rem;
+  margin-top: 3.2rem;
+ }
+ .special_two{
+  font-size: 3.3rem;
+ }
+h1{
+  font-size: 6rem;
+}
+}
  .main_button_list a {
   text-decoration: none;
   font-size: 1.6rem;
@@ -81,6 +206,16 @@ header{
  .main_button_list_bottom:hover{
      background-color: #A4E1D5;
  }
+ @media (min-width: 768px) {
+   .main_button_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 110rem;
+    height: 0;
+ }
+}
  .main_reasons_h2{
     width: 25rem;
     height: 5.6rem;
@@ -101,7 +236,7 @@ header{
     .main_reason_middle,
     .main_reason_bottom{
         display: flex;
-        justify-content: space-between;
+        justify-content:center;
         align-items: center;
         gap: 1rem;
         width: 116rem;
@@ -129,7 +264,6 @@ header{
 .main_reason_top_right_point,
 .main_reason_middle_right_point,
 .main_reason_bottom_right_point{
-  width: 8.4rem;
   height: 2.6rem;
   font-size: 3rem;
   margin: 2.05rem 27.5rem 1.3rem 1.63rem;
@@ -175,7 +309,7 @@ header{
 }
 }
 .main_form{
-  width: 37.5rem;
+  width: 100%;
   height: 21.4rem;
   background-color:rgba(255, 85, 85, 0.1)  ;
   padding-top: .1rem;
@@ -249,11 +383,17 @@ header{
 .tab-content li {
   margin-bottom: 10px;
 }
-.tab-content_box_img img{
-  width: 34.3rem;
-  height: 22rem;
-  border-radius: 1.2rem;
-  margin: 2.8rem 1.6rem 1.2rem 1.6rem;
+.tab-content_box_img{
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+  max-width: 34.3rem;
+   border-radius: 1.2rem;
+   margin: 2.8rem 1.6rem 1.2rem 1.6rem;
+}
+ .tab-content_box_img img{
+  width: 100%;
+  height:auto ;
   align-items: center;
   transition: transform 0.3s ease;
 }
@@ -313,15 +453,14 @@ height: 6.5rem;
   font-size: 2rem;
   font-weight: bold;
   text-align: right;
-    font-family: monospace;
+    font-family: poppins;
     text-align: center;
+    
 }
 
 .amount {
   display: inline-block;
-  width: 80px; /* 調整して「円」が縦に揃うように */
   text-align: right;
-  font-family: monospace;
   font-size: 3rem;
 }
 .main_cost_table .only{
@@ -330,35 +469,33 @@ height: 6.5rem;
   font-size: 1.6rem;
   font-weight: normal;
 }
-.main_last_top{
-  background-image:url(/assets/image/pht_qa.jpg.svg) ;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 17rem;
-  transition: background-size 0.3s ease;
-}
+.main_last_top,
 .main_last_bottom{
-   background-image:url(/assets/image/pht_classrooms.jpg.svg) ;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  cursor: pointer;
   width: 100%;
-  height: 17rem;
-  transition: background-size 0.3s ease;
+  max-width: 39rem;
+  overflow: hidden;
+  position: relative;
 }
-.main_last_top:hover,
-.main_last_bottom:hover{
-    background-size: 120% 120%; 
+ .main_last_top img,
+ .main_last_bottom img{
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+ } 
+
+.main_last_top:hover img,
+.main_last_bottom:hover img{
+    transform: scale(1.2);
 }
 .main_last_text{
+  position: absolute;
   font-size: 2.2rem;
   font-weight: bold;
   color: #fff;
-  align-items: center;
-  padding-top: 7.4rem;
-  padding-left: 1.8rem;
+  top: 4rem;
+  left: 2rem;
+  width: 80%;
 }
 footer small{
   display: block;
