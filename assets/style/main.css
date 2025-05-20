@@ -38,7 +38,7 @@ li {
 }
 @media (min-width:768px) {
      html {
-          font-size: calc(10 * 100vw / 1200); /* 1200はPCカンプのコンテンツ幅 */
+          font-size: calc(10 * 100vw / 1200); 
      }
 }
 @media (min-width: 1200px) {
@@ -73,6 +73,112 @@ header{
   margin: 0;
   padding: 0;
  }
+}
+ .hamburger-menu {
+  width: 7rem;
+  height: 7rem;
+  position: absolute; /* または fixed でもOK */
+  top: 0;
+  right: 0;
+  border: none;
+  background: transparent;
+  appearance: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1000;
+  background-color: #005BAC;
+  color: #fff;
+}
+.hamburger-menu__bar {
+  display: inline-block;
+  width: 44%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .5s;
+  color: #fff;
+}
+.hamburger-menu__bar:first-child {
+  top: 2.2rem;
+}
+.hamburger-menu__bar:nth-child(2) {
+  top: 3.2rem;
+}
+.hamburger-menu__bar:last-child {
+  top: 4.2rem;
+}
+.hamburger-menu--open .hamburger-menu__bar {
+  top: 70%;
+}
+.hamburger-menu--open .hamburger-menu__bar:first-child {
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.hamburger-menu--open .hamburger-menu__bar:last-child {
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+.hamburger-menu--open .hamburger-menu__bar:nth-child(2) {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .nav_header {
+    display: block;
+    position: static; /* デフォルトの位置に戻す */
+    background: transparent; /* デスクトップでは背景色を消す or 必要なら調整 */
+    width: auto;
+    
+  }
+
+  .nav_header_list {
+    display: flex; /* 横並びにする */
+    justify-content: flex-end; /* 必要に応じて右寄せなど */
+    gap: 24px; /* 各項目の間にスペース */
+  }
+
+  .nav_header_list_top,
+  .nav_header_list_middle,
+  .nav_header_list_bottom,
+  .nav_header_list_special {
+    border: none; /* ボーダーを消す（必要なら） */
+  }
+
+  .navigation__link {
+    padding: 0 16px;
+    color: #242424; /* デスクトップ用の文字色 */
+  }
+}
+.nav_header{
+   display: none;
+  background: #005BAC;
+  position: absolute;
+  top: 7rem;
+  width: 100%;
+  z-index: 9999;
+}
+.nav_header_list {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav_header_list_top,
+.nav_header_list_middle,
+.nav_header_list_bottom{
+  border-bottom: solid 1px #474747;
+}
+.navigation__link {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+  padding: 24px 0;
+  transition: .5s;
+}
  @media (min-width: 768px) {
   .header_box_first{
     height: 7rem;
@@ -80,7 +186,7 @@ header{
     gap: 2rem;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0 0 0;
+    padding: 3rem 0 0 0;
   }
 
   .nav_header_list{
@@ -129,7 +235,7 @@ header{
     }
  
  .header_box{
-     background-image: url(/assets/image/mainVIsual_sp.jpg.svg);
+     background-image: url(/assets/image/mainVIsual_sp.jpg.jpg);
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
@@ -149,7 +255,7 @@ header{
 
  @media(min-width: 768px){
   .header_box{
-     background-image: url(/assets/image/mainVIsual_sp.jpg.svg);
+     background-image: url(/assets/image/mainVIsual_pc.jpg.jpg);
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
@@ -177,7 +283,7 @@ header{
 }
 h1{
   font-size: 2.4rem;
-  font-weight: heavy;
+  font-weight: bold;
   color: #005BAC;
 }
  .header_box_logo img{
@@ -385,7 +491,7 @@ h1{
   font-size: 4.2rem;
   padding-left: 1rem;
 }
-}
+
 .main_reason_top_right_h3,
 .main_reason_middle_right_h3,
 .main_reason_bottom_right_h3{
@@ -510,8 +616,8 @@ h1{
   background-color: #eee;
   border: none;
   cursor: pointer;
- border-top-left-radius: 4px;  
-  border-top-right-radius: 4px; 
+ border-top-left-radius: 1.2rem;  
+  border-top-right-radius: 1.2rem; 
   color: rgba(51, 51, 51, 0.5);
   font-size: 1.8rem;
   font-weight: bold;
@@ -561,6 +667,7 @@ h1{
 }
 .tab-content li {
   margin-bottom: 10px;
+  padding: 2.8rem 1.6rem 1.2rem 1.6rem;
 }
 .tab-content_box_img{
   cursor: pointer;
@@ -568,13 +675,10 @@ h1{
   overflow: hidden;
   max-width: 34.3rem;
    border-radius: 1.2rem;
-   margin: 2.8rem 1.6rem 1.2rem 1.6rem;
+   margin: 0;
 }
 @media (min-width: 768px) {
-   .tab_content_box .tab-content_box_img img {
-    width: 53.2rem;
-  }
- .tab-content_box_img img{
+ .tab-content_box_img{
   width: 53.2rem;
   height:auto ;
   align-items: center;
@@ -621,6 +725,19 @@ h1{
   border-collapse: collapse; 
   border-spacing: 0;    
   margin: 0 auto 6.4rem auto;
+}
+@media (min-width: 768px) {
+  .main_cost_table{
+    width: 56rem;
+    height: 45.1rem;
+    font-size: 2.4rem;
+    text-align: center;
+    border: 1.5px solid #ccc;
+    border-bottom: .8px solid #ccc;
+    border-collapse: collapse; 
+    border-spacing: 0;    
+    margin: 0 auto 6.4rem auto;
+}
 }
 .only_one{
   background-color: #F5F5F5;
@@ -684,12 +801,9 @@ height: 6.5rem;
 @media (min-width: 768px) {
   .main_last {
   display: flex;
-  width: 100vw;
-  height: 100%; /* 必要に応じて固定高さも可 */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .main_last_top,
@@ -697,12 +811,14 @@ height: 6.5rem;
   position: relative;
   flex: 1;
   height: 100%;
+  width: 50%;
+  text-align: center;
 }
 
 .main_last_top img,
 .main_last_bottom img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   display: block;
 }

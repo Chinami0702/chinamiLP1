@@ -24,7 +24,7 @@
     />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://example.com" />
-    <meta property="og:image" content="https://example.com/assets/image.jpg" />
+    <meta property="og:image" content="https://example.com/assets/image/main_top_pc.jpg">
     <meta property="og:site_name" content="Kira-Kira Juku" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -33,21 +33,27 @@
   </head>
   <body>
     <header>
+
+  <button class="hamburger-menu" id="js-hamburger-menu">
+    <span class="hamburger-menu__bar"></span>
+    <span class="hamburger-menu__bar"></span>
+    <span class="hamburger-menu__bar"></span>
+  </button>
       <div class="header_box_first">
         <a href="/"
-          ><img src="/assets/image/kira_kira_juku.svg" alt="Kira-Kira Juku"
+          ><img src="/assets/image/logo.png" alt="Kira-Kira Juku"
         /></a>
         <nav class="nav_header">
           <ul class="nav_header_list">
             <li class="nav_header_list_top">
-              <a href="#chosen">選ばれる３つの理由</a>
+              <a href="#chosen" class="navigation__link">選ばれる３つの理由</a>
             </li>
             <li class="nav_header_list_middle">
-              <a href="#corse">コース・目的</a>
+              <a href="#corse" class="navigation__link">コース・目的</a>
             </li>
-            <li class="nav_header_list_bottom"><a href="#cost">費用</a></li>
+            <li class="nav_header_list_bottom"><a href="#cost" class="navigation__link">費用</a></li>
             <li class="nav_header_list_special">
-              <a href="#x">入学説明会に申し込む</a>
+              <a href="#x" class="navigation__link">入学説明会に申し込む</a>
             </li>
           </ul>
         </nav>
@@ -89,7 +95,7 @@
             <div class="main_reason_top_left">
               <p class="main_reason_top_left_img">
                 <img
-                  src="/assets/image/girl_with_mam_copy.jpg"
+                  src="/assets/image/reason01_sp.jpg"
                   alt="女の子が成績伸びて喜んでいる。"
                 />
               </p>
@@ -112,7 +118,7 @@
             <div class="main_reason_middle_left">
               <p class="main_reason_middle_left_img">
                 <img
-                  src="/assets/image/man_is_using_pc_copy.jpg"
+                  src="/assets/image/reason02_sp.jpg"
                   alt="オンライン授業を受ける。"
                 />
               </p>
@@ -135,7 +141,7 @@
             <div class="main_reason_bottom_left">
               <p class="main_reason_bottom_left_img">
                 <img
-                  src="/assets/image/man_teach_girl_copy.jpg"
+                  src="/assets/image/reason03_sp.jpg"
                   alt="丁寧な指導を受けている。"
                 />
               </p>
@@ -178,13 +184,13 @@
               <li>
                 <p class="tab-content_box_img">
                   <img
-                    src="/assets/image/abultmangonnaabroad_copy.jpg"
+                    src="/assets/image/cource01_sp.jpg"
                     alt="気合いのある"
                   />
                 </p>
                 <a href="#"
                   ><img
-                    src="/assets/image/yajirushi.svg "
+                    src="/assets/image/yajirushi.svg"
                     alt="→"
                     class="icon"
                   />高卒生</a
@@ -193,7 +199,7 @@
               <li>
                 <p class="tab-content_box_img">
                   <img
-                    src="/assets/image/girl_studing_something_copy.jpg"
+                    src="/assets/image/cource02_sp.jpg"
                     alt="勉強している"
                   />
                 </p>
@@ -210,13 +216,13 @@
               <li>
                 <p class="tab-content_box_img">
                   <img
-                    src="/assets/image/girl_boy_maybe_cople_copy.jpg"
+                    src="/assets/image/cource03_sp.jpg"
                     alt="勉強を教えあう"
                   />
                 </p>
                 <a href="#"
                   ><img
-                    src="/assets/image/yajirushi.svg "
+                    src="/assets/image/yajirushi.svg"
                     alt="→"
                     class="icon"
                   />高校2年生</a
@@ -224,7 +230,7 @@
               </li>
               <li>
                 <p class="tab-content_box_img">
-                  <img src="/assets/image/girl_smiling_copy.jpg" alt="笑顔な" />
+                  <img src="/assets/image/cource04_sp.jpg" alt="笑顔な" />
                 </p>
                 <a href="#"
                   ><img
@@ -258,7 +264,7 @@
             <li>
               <p class="tab-content_box_img">
                 <img
-                  src="/assets/image/pht_cource06.png.svg"
+                  src="/assets/image/cource06_sp.jpg"
                   alt="早稲田などの"
                 />
               </p>
@@ -272,7 +278,7 @@
             </li>
             <li>
               <p class="tab-content_box_img">
-                <img src="/assets/image/pht_cource07.png.svg" alt="" />
+                <img src="/assets/image/cource07_sp.jpg" alt="" />
               </p>
               <a href="#"
                 ><img
@@ -284,7 +290,7 @@
             </li>
             <li>
               <p class="tab-content_box_img">
-                <img src="/assets/image/pht_cource08.png.svg" alt="" />
+                <img src="/assets/image/cource08_sp.jpg" alt="" />
               </p>
               <a href="#"
                 ><img
@@ -344,11 +350,11 @@
       </div>
       <div class="main_last">
         <div class="main_last_top">
-          <img src="/assets/image/pht_qa.jpg.svg" alt="" />
+          <img src="/assets/image/bottom02sp.jpg" alt="" />
           <p class="main_last_text">よくあるご質問</p>
         </div>
         <div class="main_last_bottom">
-          <img src="/assets/image/pht_classrooms.jpg.svg" alt="" />
+          <img src="/assets/image/bottomsp.jpg" alt="" />
           <p class="main_last_text">お近くの教室を探す</p>
         </div>
       </div>
