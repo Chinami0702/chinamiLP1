@@ -61,7 +61,7 @@ header{
   header img{
      width: 16.3rem;
      height: 1.78rem;
-     margin:2.64rem 19.4rem 2.5rem 1.7rem ;
+     margin:2.3rem 18rem 2.5rem 1.7rem ;
  }
   @media (min-width: 768px) {
     .header_img img{
@@ -92,7 +92,7 @@ header{
 .hamburger-menu__bar {
   display: inline-block;
   width: 44%;
-  height: 2px;
+  height: .4rem;
   background: #fff;
   position: absolute;
   left: 50%;
@@ -110,7 +110,7 @@ header{
   top: 4.2rem;
 }
 .hamburger-menu--open .hamburger-menu__bar {
-  top: 70%;
+  top: 50%;
 }
 .hamburger-menu--open .hamburger-menu__bar:first-child {
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
@@ -241,12 +241,16 @@ header{
      background-position: center;
      height: 25rem; 
      margin-top: 0;
-     padding: 2rem 0 0 3rem;
+     padding: 2.8rem 0 0 .2rem;
  }
  .header_box_logo_ss{
   display: flex;
   align-items: center;
   justify-content: center;
+ }
+ .header_box_logo_ss img{
+  width: 2.4rem;
+  height: 6.86rem;
  }
  .header_box_logo_one{
    width: 17.5rem;
@@ -269,17 +273,22 @@ header{
  }
  .special_one{
   font-size: 1.1rem;
+  padding: .5rem 0 0 0;
  }
  .special{
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-family: poppins;
   font-weight: bold;
   color: #F11F8D;
   font-style: italic;
   text-align: center;
  }
+ .special_three{
+  font-size: 3.5rem;
+ }
 .special_two{
   font-size: 1.4rem;
+ padding: 0 0 0 1.3rem
 }
 h1{
   font-size: 2.4rem;
@@ -342,14 +351,22 @@ h1{
   }
 }
  .main_button_list_top,
- .main_button_list_middle,
- .main_button_list_bottom{
+ .main_button_list_middle{
      display: flex;
      align-items: center;
      justify-content: center;
      width: 25rem;
      height: 4.8rem;
      margin-bottom: 1.2rem;
+     border-radius: 2.5rem;
+     transition: background-color 0.3s ease;
+ }
+ .main_button_list_bottom{
+ display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 25rem;
+     height: 4.8rem;;
      border-radius: 2.5rem;
      transition: background-color 0.3s ease;
  }
@@ -394,7 +411,7 @@ h1{
     width: 25rem;
     height: 5.6rem;
     margin: 0 auto;
-    font-size: 2.7rem;
+    font-size: 2.8rem;
  }
  @media (min-width: 768px) {
     /* .main_reasons_box{
@@ -432,6 +449,8 @@ h1{
  span{
     color: #F11F8D;
     font-weight: bold;
+    font-size: 4rem;
+
  }
 .main_reason_top_left_img img,
 .main_reason_middle_left_img img,
@@ -458,9 +477,9 @@ h1{
 .main_reason_top_right_point,
 .main_reason_middle_right_point,
 .main_reason_bottom_right_point{
-  /* height: 2.6rem; */
-  font-size: 3rem;
-  margin: 2.05rem 27.5rem 1.3rem 1.63rem;
+  height: 2.6rem;
+  font-size: 2.4rem;
+  margin:1.7rem 27.5rem 0rem 1.63rem;
   font-family: Poppins;
   font-weight: Bold;
   font-style: italic;
@@ -488,7 +507,7 @@ h1{
 }
 }
 .one{
-  font-size: 4.2rem;
+  font-size: 3.6rem;
   padding-left: 1rem;
 }
 
@@ -510,7 +529,7 @@ h1{
 .main_reason_top_right_h3{
     width: 26rem;
     font-size: 2rem;
-    margin: 1.9rem 9.9rem 1.6rem 1.6rem;
+    margin: 2.5rem 9.9rem 0rem 1.6rem;
 }
 @media (min-width: 768px) {
   .main_reason_top_right_h3{
@@ -545,7 +564,7 @@ h1{
 .main_reason_bottom_right_text{
   width: 34rem;
   height: 18rem;
-  margin: 0 27rem 4rem 1.6rem;
+  margin: .7rem 27rem 4rem 1.6rem;
   font-size: 1.6rem;
 }
 @media (min-width: 768px) {
