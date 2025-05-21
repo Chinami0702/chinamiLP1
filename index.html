@@ -24,7 +24,10 @@
     />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://example.com" />
-    <meta property="og:image" content="https://example.com/assets/image/main_top_pc.jpg">
+    <meta
+      property="og:image"
+      content="https://example.com/assets/image/main_top_pc.jpg"
+    />
     <meta property="og:site_name" content="Kira-Kira Juku" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -33,12 +36,11 @@
   </head>
   <body>
     <header>
-
-  <button class="hamburger-menu" id="js-hamburger-menu">
-    <span class="hamburger-menu__bar"></span>
-    <span class="hamburger-menu__bar"></span>
-    <span class="hamburger-menu__bar"></span>
-  </button>
+      <button class="hamburger-menu" id="js-hamburger-menu">
+        <span class="hamburger-menu__bar"></span>
+        <span class="hamburger-menu__bar"></span>
+        <span class="hamburger-menu__bar"></span>
+      </button>
       <div class="header_box_first">
         <a href="/"
           ><img src="/assets/image/logo.png" alt="Kira-Kira Juku"
@@ -51,7 +53,9 @@
             <li class="nav_header_list_middle">
               <a href="#corse" class="navigation__link">コース・目的</a>
             </li>
-            <li class="nav_header_list_bottom"><a href="#cost" class="navigation__link">費用</a></li>
+            <li class="nav_header_list_bottom">
+              <a href="#cost" class="navigation__link">費用</a>
+            </li>
             <li class="nav_header_list_special">
               <a href="#x" class="navigation__link">入学説明会に申し込む</a>
             </li>
@@ -94,10 +98,7 @@
           <div class="main_reason_top">
             <div class="main_reason_top_left">
               <p class="main_reason_top_left_img">
-                <img
-                  src="/assets/image/reason01_sp.jpg"
-                  alt=""
-                />
+                <img src="/assets/image/reason01_sp.jpg" alt="" />
               </p>
             </div>
             <div class="main_reason_top_right">
@@ -117,10 +118,7 @@
           <div class="main_reason_middle">
             <div class="main_reason_middle_left">
               <p class="main_reason_middle_left_img">
-                <img
-                  src="/assets/image/reason02_sp.jpg"
-                  alt=""
-                />
+                <img src="/assets/image/reason02_sp.jpg" alt="" />
               </p>
             </div>
             <div class="main_reason_middle_right">
@@ -140,10 +138,7 @@
           <div class="main_reason_bottom">
             <div class="main_reason_bottom_left">
               <p class="main_reason_bottom_left_img">
-                <img
-                  src="/assets/image/reason03_sp.jpg"
-                  alt=""
-                />
+                <img src="/assets/image/reason03_sp.jpg" alt="" />
               </p>
             </div>
             <div class="main_reason_bottom_right">
@@ -169,140 +164,89 @@
         </p>
         <button type="button" class="button">入学説明会に申し込む</button>
       </div>
-      <section class="main_course-purpose">
-        <h2 class="main_course-purpose_h2" id="corse">コース・目的</h2>
-        <div class="tabs">
-          <button class="tab-btn active" data-target="#grade">
-            学年別から選ぶ
-          </button>
-          <button class="tab-btn" data-target="#goal">目的別から選ぶ</button>
-        </div>
-
-        <div class="tab-content" id="grade">
-          <div class="tab_content_box">
-            <ul class="tab-content_box_top">
-              <li>
-                <p class="tab-content_box_img">
-                  <img
-                    src="/assets/image/cource01_sp.jpg"
-                    alt=""
-                  />
-                </p>
-                <a href="#"
-                  ><img
-                    src="/assets/image/yajirushi.svg"
-                    alt=""
-                    class="icon"
-                  />高卒生</a
-                >
-              </li>
-              <li>
-                <p class="tab-content_box_img">
-                  <img
-                    src="/assets/image/cource02_sp.jpg"
-                    alt=""
-                  />
-                </p>
-                <a href="#"
-                  ><img
-                    src="/assets/image/yajirushi.svg "
-                    alt=""
-                    class="icon"
-                  />高校3年生</a
-                >
-              </li>
-            </ul>
-            <ul class="tab-content_box_bottom">
-              <li>
-                <p class="tab-content_box_img">
-                  <img
-                    src="/assets/image/cource03_sp.jpg"
-                    alt=""
-                  />
-                </p>
-                <a href="#"
-                  ><img
-                    src="/assets/image/yajirushi.svg"
-                    alt=""
-                    class="icon"
-                  />高校2年生</a
-                >
-              </li>
-              <li>
-                <p class="tab-content_box_img">
-                  <img src="/assets/image/cource04_sp.jpg" alt="" />
-                </p>
-                <a href="#"
-                  ><img
-                    src="/assets/image/yajirushi.svg "
-                    alt=""
-                    class="icon"
-                  />高校1年生</a
-                >
-              </li>
-            </ul>
+      
+        <section>
+          <div class="main_cource">
+            <div class="main_cource-container">
+              <h2 class="main_cource-container_h2">コース・目的</h2>
+             <div class="main_cource-tag">
+                   <p class="main_cource-tag_one tab-btn active" data-target="#grade">学年別から選ぶ</p>
+                   <p class="main_cource-tag_one tab-btn" data-target="#goal">目的別から選ぶ</p>
+                 </div>
+              <div class="main_cource-box" id="grade">
+              <div class="main_cource-list">
+                <ul class="main_cource-list_list">
+                  <li class="main_cource-list_list_content">
+                    <picture>
+                      <source media="(min-width: 768px)" src="/assets/image/cource01_pc.jpg">
+                      <img src="/assets/image/cource01_sp.jpg" alt="" class="main_cource-list_list_img">
+                    </picture>
+                    <p class="main_cource-list_list_p"><img src="/assets/image/yajirushi.svg" alt="" width="17" height="14">高卒生</p>
+                  </li>
+                  <li class="main_cource-list_list_content">
+                    <picture>
+                      <source media="(min-width: 768px)" src="/assets/image/cource02_pc.jpg">
+                      <img src="/assets/image/cource02_sp.jpg" alt="" class="main_cource-list_list_img">
+                    </picture>
+                    <p class="main_cource-list_list_p"><img src="/assets/image/yajirushi.svg" alt="" width="17" height="14">高校3年生</p>
+                  </li>
+                  <li class="main_cource-list_list_content">
+                    <picture>
+                      <source media="(min-width: 768px)" src="/assets/image/cource03_pc.jpg">
+                      <img src="/assets/image/cource03_sp.jpg" alt="" class="main_cource-list_list_img">
+                    </picture>
+                    <p class="main_cource-list_list_p"><img src="/assets/image/yajirushi.svg" alt="" width="17" height="14">高校2年生</p>
+                  </li>
+                  <li class="main_cource-list_list_content">
+                    <picture>
+                      <source media="(min-width: 768px)" src="/assets/image/cource04_pc.jpg">
+                      <img src="/assets/image/cource04_sp.jpg" alt="" class="main_cource-list_list_img">
+                    </picture>
+                    <p class="main_cource-list_list_p"><img src="/assets/image/yajirushi.svg" alt="" width="17" height="14">高校1年生</p>
+                  </li>
+                </ul>
+              </div>
+              </div>
+              <div class="main_cource-list">
+              <div class="main_cource-box" id="goal">
+                <ul class="main_cource-list_list">
+                  <li class="main_cource-list_list_content">
+                    <picture>
+                      <source media="(min-width: 768px)" src="/assets/image/cource05_pc.jpg">
+                      <img src="/assets/image/cource05_sp.jpg" alt="" class="main_cource-list_list_img">
+                    </picture>
+                    <p class="main_cource-list_list_p"><img src="/assets/image/yajirushi.svg" alt="" width="17" height="14">高卒生</p>
+                  </li>
+                  <li class="main_cource-list_list_content">
+                    <picture>
+                      <source media="(min-width: 768px)" src="/assets/image/cource06_pc.jpg">
+                      <img src="/assets/image/cource06_sp.jpg" alt="" class="main_cource-list_list_img">
+                    </picture>
+                    <p class="main_cource-list_list_p"><img src="/assets/image/yajirushi.svg" alt="" width="17" height="14">高校3年生</p>
+                  </li>
+                  <li class="main_cource-list_list_content">
+                    <picture>
+                      <source media="(min-width: 768px)" src="/assets/image/cource07_pc.jpg">
+                      <img src="/assets/image/cource07_sp.jpg" alt="" class="main_cource-list_list_img">
+                    </picture>
+                    <p class="main_cource-list_list_p"><img src="/assets/image/yajirushi.svg" alt="" width="17" height="14">高校2年生</p>
+                  </li>
+                  <li class="main_cource-list_list_content">
+                    <picture>
+                      <source media="(min-width: 768px)" src="/assets/image/cource08_pc.jpg">
+                      <img src="/assets/image/cource08_sp.jpg" alt="" class="main_cource-list_list_img">
+                    </picture>
+                    <p class="main_cource-list_list_p"><img src="/assets/image/yajirushi.svg" alt="" width="17" height="14">高校1年生</p>
+                  </li>
+                </ul>
+              </div>
+             </div>
+            </div>
           </div>
-        </div>
+        
+        </section>
 
-        <div class="tab-content" id="goal" style="display: none">
-          <ul class="tab-content_box_two">
-            <li>
-              <p class="tab-content_box_img">
-                <img
-                  src="/assets/image/pht_cource05.png.svg"
-                  alt=""
-                />
-              </p>
-              <a href="#"
-                ><img
-                  src="/assets/image/yajirushi.svg "
-                  alt=""
-                  class="icon"
-                />難関大学・医学部合格を目指す</a
-              >
-            </li>
-            <li>
-              <p class="tab-content_box_img">
-                <img
-                  src="/assets/image/cource06_sp.jpg"
-                  alt=""
-                />
-              </p>
-              <a href="#"
-                ><img
-                  src="/assets/image/yajirushi.svg "
-                  alt=""
-                  class="icon"
-                />名門私立大学合格を目指す</a
-              >
-            </li>
-            <li>
-              <p class="tab-content_box_img">
-                <img src="/assets/image/cource07_sp.jpg" alt="">
-              </p>
-              <a href="#"
-                ><img
-                  src="/assets/image/yajirushi.svg "
-                  alt=""
-                  class="icon"
-                />国公立大学合格を目指す</a
-              >
-            </li>
-            <li>
-              <p class="tab-content_box_img">
-                <img src="/assets/image/cource08_sp.jpg" alt="" >
-              </p>
-              <a href="#"
-                ><img
-                  src="/assets/image/yajirushi.svg "
-                  alt=""
-                  class="icon"
-                />海外の大学合格を目指す</a
-              >
-            </li>
-          </ul>
-        </div>
-      </section>
+       
       <div class="main_form">
         <p class="main_form_text">
           入学ご検討の方は、まずは入学説明会にお越しください

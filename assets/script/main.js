@@ -5,7 +5,7 @@ $(document).ready(function() {
     $(this).addClass("active");
 
     // コンテンツを切り替え
-    $(".tab-content").hide();
+    $(".main_cource-box").hide();
     var target = $(this).data("target");
     $(target).show();
   });
