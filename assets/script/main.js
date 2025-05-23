@@ -1,19 +1,25 @@
-$(document).ready(function() {
-  $(".tab-btn").click(function() {
-    // ボタンのアクティブ状態を切り替え
+ $(function () {
+    $('#js-hamburger-menu').on('click', function () {
+      $('.nav_header').fadeIn();
+    });
+
+    // メニュー外クリックで閉じたい場合：
+    $(document).on('click', function (e) {
+      if (!$(e.target).closest('.nav_header, #js-hamburger-menu').length) {
+        $('.nav_header').fadeOut();
+      }
+    });
+  });
+  
+$(function () {
+  $(".tab-btn").on("click", function () {
     $(".tab-btn").removeClass("active");
     $(this).addClass("active");
 
-    // コンテンツを切り替え
     $(".main_cource-box").hide();
-    var target = $(this).data("target");
-    $(target).show();
+    $($(this).data("target")).show();
   });
 });
 
-$(function () {
-  $('#js-hamburger-menu, .navigation__link').on('click', function () {
-    $('.nav_header').slideToggle(500)
-    $('.hamburger-menu').toggleClass('hamburger-menu--open')
-  });
-});
+
+
