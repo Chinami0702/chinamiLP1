@@ -310,14 +310,17 @@
       </div>
     </div>
       <div class="main_last">
-        <div class="main_last_top">
-          <img src="/assets/image/bottom02sp.jpg" alt="" />
-          <p class="main_last_text">よくあるご質問</p>
-        </div>
-        <div class="main_last_bottom">
-          <img src="/assets/image/bottomsp.jpg" alt="" />
-          <p class="main_last_text">お近くの教室を探す</p>
-        </div>
+   <picture class="main_last_top">
+        <source media="(min-width: 768px)" src="/assets/image/bottom02pc.jpg">
+         <img src="/assets/image/bottom02sp.jpg" alt="">
+         <p class="main_last_text">よくあるご質問</p>
+      </picture>
+        <picture class="main_last_bottom">
+         <source media="(min-width: 768px)" src="/assets/image/bottompc.jpg">
+         <img src="/assets/image/bottomsp.jpg" alt=""> 
+        <p class="main_last_text">お近くの教室を探す</p>
+      </picture>
+        
       </div>
     </main>
     <footer>

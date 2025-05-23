@@ -48,17 +48,21 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  box-shadow: 0rem .4rem 1rem rgba(0, 0, 0, 0.25); ;
+  box-shadow: 0rem 2rem 1rem rgba(0, 0, 0, 0.5); 
+    z-index: 10;
 }
-@media (min-width:768px){
-  .header{
-    height: 10.1rem;
-  }
-}
+
 .logo {
   font-weight: 700;
   padding-left: 14px;
+}
+.header .logo img{
+  width: 16.6rem;
+}
+@media (min-width:768px){
+  .header .logo img{
+  width: 49rem;
+}
 }
 .hamburger-menu {
   width: 7rem;
@@ -116,12 +120,14 @@ li {
   width: 100%;
   z-index: 9999;
   height: 33.1rem;
+  /* position: static; */
 }
 .navigation__list {
   text-align: center;
   list-style: none;
   padding: 0;
   margin: 0;
+  /* display: flex; */
 }
 .navigation__list-item {
   border-bottom: solid 1px #474747;
@@ -163,12 +169,78 @@ li {
   text-align: center ;
   padding-left: 5rem;
 }
-@media (hover: hover) and (pointer: fine) {
-  .navigation__link:hover {
-    background: #333;
+
+@media (min-width:768px) and (max-width:1399px){
+  .logo {
+  font-weight: 700;
+  padding: 2rem 0rem 0rem  5rem;
+}
+}
+@media (min-width: 1400px){
+  .logo {
+    margin: 0 0 0 0;
+    padding:1rem 0 0 30rem
+  }
+} 
+
+@media (min-width: 768px) {
+  .header{
+    height: 10.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.logo img{
+  /* width: 24.1rem; */
+  height: 4.5rem;
+}
+  .navigation {
+    display: block; /* 表示する */
+    position: static; /* PCでは絶対位置をやめる */
+    background: none; /* 背景を透明に */
+    height: 10.1rem; /* 高さ制限をなくす */
+    padding: 3.5rem 0 0 0;
+  }
+
+  .navigation__list {
+    display: flex; /* 横並びにする */
+    justify-content: center; /* 右寄せにする（お好みで中央にも） */
+    align-items: center;
+    gap: 4.8rem;
+  }
+
+  .nav_header_list-item {
+    border: none; /* 線を消す */
+    padding: 0;
+    width: auto; /* 幅を自動に */
+    margin: 0;
+  }
+
+  .navigation__link {
+    color: #000; /* テキスト色を黒などに調整（背景が白なら） */
+    padding: 0;
+    font-size: 2rem;
+    gap: 0.5rem;
+  }
+
+  .special-li {
+    background-color: #005BAC;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    margin-left: 2rem;
+    border-radius: 2rem;
+   margin: 0 0 0 0;
+  }
+
+  .arrow-img {
+    display: none; /* 矢印アイコンはPCでは省略可 */
+  }
+
+  .hamburger-menu {
+    display: none; /* ハンバーガーをPCで非表示に */
   }
 }
-
  
  .header_box{
      background-image: url(/assets/image/mainVIsual_sp.jpg.jpg);
@@ -179,6 +251,16 @@ li {
      margin-top: 0;
      padding: 3.3rem 0 0 0rem;
  }
+ @media (min-width:768px){
+  .header_box{
+  background-image: url(/assets/image/mainVIsual_pc.jpg.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     height: 65rem; 
+     margin-top: 0;
+ }
+ }
  .header_container{
   margin: 0 0 0 1.7rem ;
  }
@@ -186,33 +268,7 @@ li {
   .hamburger-menu {
     display: none;
   }
-
-  .nav_header {
-    display: block;
-    position: static; /* デフォルトの位置に戻す */
-    background: transparent; /* デスクトップでは背景色を消す or 必要なら調整 */
-    width: auto;
-    
-  }
-
-  .nav_header_list {
-    display: flex; /* 横並びにする */
-    justify-content: flex-end; /* 必要に応じて右寄せなど */
-    gap: 24px; /* 各項目の間にスペース */
-  }
-
-  .nav_header_list_top,
-  .nav_header_list_middle,
-  .nav_header_list_bottom,
-  .nav_header_list_special {
-    border: none; /* ボーダーを消す（必要なら） */
-  }
-
-  .navigation__link {
-    padding: 0 16px;
-    color: #eee; /* デスクトップ用の文字色 */
-  }
-}
+ }
 
  @media(min-width: 768px){
   .header_box{
@@ -223,9 +279,16 @@ li {
      height: 65rem; 
      padding:10rem 2rem 2rem 2rem;
  }
- .header_container{
-  margin:0rem 0rem 0rem 38.6rem ;
- }
+} 
+@media (min-width: 1200px) and (max-width: 1620px) {
+  .header_container {
+    margin: 0 0 0 20rem;
+  }
+}
+@media (min-width:1620px){
+  .header_container{
+     margin: 0 0 0 40rem; 
+  }
 }
  .header_box_logo_ss{
   display: flex;
@@ -238,16 +301,11 @@ li {
   }
 }
  
-    /* align-items: center;
- .header_box_logo_ss img{
-  width: 2.4rem;
-  height: 6.86rem;
- } */
+ 
   @media (min-width:768px){
   .main_button{
-    position: absolute;
-    top: 73.2rem;
-    left: 40.7rem;
+     width: 100%;
+     margin: -2rem auto 0 auto;
   }
 }
  
@@ -510,14 +568,10 @@ h1{
   color: #F11F8D;
   padding: 0 0 .2rem 0;
  }
-/* .main_reason_left_img img{
+.main_reason_left_img img{
   width: 34rem;
   height: 22rem;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  border-radius: 1.2rem;
-}        */
+}
 @media (min-width: 768px) {
   .third-main_reason{
     padding: 4.6rem 0rem 1rem 0rem
@@ -645,6 +699,10 @@ h1{
   font-size: 2rem;
   background: linear-gradient(to right, rgba(2,113,224,1), rgba(83,162,240,1));
   border: none;
+ transition: background 0.3s ease;
+}
+.button:hover{
+  background: rgba(83, 162, 240, 1);
 }
 @media (min-width: 768px) {
   .button{
@@ -771,11 +829,15 @@ h1{
 } 
 .main_cource-list{
   padding: 4rem 1rem .4rem 1.6rem;
+  background-color: #F2F9FF;
 }
 .main_cource-list_list_img{
+  display: block;
+  width: 100%;
   margin-bottom: 1.2rem;
   height: 22rem;
-}
+}   
+
 @media (min-width: 768px) {
   .main_cource-list_list_img{
    width: 53.2rem;
@@ -800,6 +862,8 @@ h1{
   display: none;
 }
 .main_cource-list_list_content{
+  overflow: hidden;
+  position: relative;
   width: 34.3rem;
   margin: 0 auto;
 } 
@@ -916,36 +980,38 @@ height: 6.5rem;
   font-size: 1.6rem;
   font-weight: normal;
 }
+@media (min-width:768px) {
+.main_cost_table .only{
+     font-size: 2.4rem;
+  }
+}
+
 .third-main_form{
   margin: 4rem 0 0 0;
 }
+
 .main_last_top,
 .main_last_bottom{
+  position: relative;
+  flex: 1;
   cursor: pointer;
   width: 100%;
-  overflow: hidden;
-  position: relative;
+  
 }
  .main_last_top img,
  .main_last_bottom img{
   width: 100%;
   height: 17rem;
-  transition: transform 0.3s ease;
  } 
 
-.main_last_top:hover img,
-.main_last_bottom:hover img{
-    transform: scale(1.2);
-}
 .main_last_text{
   position: absolute;
-  
   font-size: 2.2rem;
   font-weight: bold;
   color: #fff;
-  top: 6.5rem;
+  top: 3.5rem;
   left: 1.7rem;
-  width: 80%;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   .main_last {
