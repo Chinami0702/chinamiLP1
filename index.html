@@ -31,46 +31,43 @@
     <link rel="stylesheet" href="/assets/style/main.css">
   </head>
   <body>
-    <header>
-      <button class="hamburger-menu" id="js-hamburger-menu">
-        <span class="hamburger-menu__bar"></span>
-        <span class="hamburger-menu__bar"></span>
-        <span class="hamburger-menu__bar"></span>
-      </button>
-      <div class="header_box_first">
-        <a href="/"><img src="/assets/image/logo.png" alt="Kira-Kira Juku"></a>
-        <nav class="nav_header">
-          <ul class="nav_header_list">
-            <li class="nav_header_list_top">
-               <a href="#chosen" class="navigation__link">
-                <img src="/assets/image/yajirushi.svg" alt="矢印" class="arrow-img">
+   <header class="header">
+  <div class="logo"><img src="/assets/image/kira_kira_juku.svg" alt=""></div>
+  <button class="hamburger-menu" id="js-hamburger-menu">
+    <span class="hamburger-menu__bar"></span>
+    <span class="hamburger-menu__bar"></span>
+    <span class="hamburger-menu__bar"></span>
+  </button>
+  <nav class="navigation">
+    <ul class="navigation__list">
+      <li class="nav_header_list-item">
+       <a href="#chosen" class="navigation__link">
+        <img src="/assets/image/yaji.svg" alt="矢印" class="arrow-img" width="14" height="12">
                 選ばれる３つの理由
                  </a>
-            </li>
-            <li class="nav_header_list_middle">
-               <a href="#corse" class="navigation__link">
-                <img src="/assets/image/yajirushi.svg" alt="矢印" class="arrow-img">
+     </li>
+      <li class="nav_header_list-item">
+        <a href="#corse" class="navigation__link">
+        <img src="/assets/image/yaji.svg" alt="矢印" class="arrow-img" width="14" height="12">
                 コース・目的
                  </a>
-            </li>
-           <li class="nav_header_list_bottom">
+       </li>
+      <li class="nav_header_list-item">
                <a href="#cost" class="navigation__link">
-                <img src="/assets/image/yajirushi.svg" alt="矢印" class="arrow-img">
+                <img src="/assets/image/yaji.svg" alt="矢印" class="arrow-img" width="14" height="12">
                 費用
                  </a>
-            </li>
-            <li class="nav_header_list_special">
-               <a href="#x" class="navigation__link">
-                <img src="/assets/image/yajirushi.svg" alt="矢印" class="arrow-img">
+      </li>
+      <li class="nav_header_list-item ">
+               <a href="#x" class="navigation__link special-li">
                 入学説明会に申し込む
                  </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+      </li>
+    </ul>
+  </nav>
+</header>
    
-    
+    <main>
        <section class="header_box">
         <div class="header_container">
         <div class="header_box_logo_one">
@@ -132,11 +129,11 @@
                       <img src="/assets/image/reason02_sp.jpg" alt="">
                     </picture>
             </div>
-            <div class="main_reason_right">
+            <div class="main_reason_right second-main_reason_right">
               <p class="main_reason_right_point">
                 Point<span class="one">2</span>
               </p>
-              <h3 class="main_reason_right_h3">
+              <h3 class="main_reason_right_h3 second-main_reason_right_h3">
                 オンラインにも対応だから、早送り巻き戻し視聴できる。
               </h3>
               <p class="main_reason_right_text">
@@ -146,15 +143,15 @@
             <!-- main_reason_middle_right -->
           </div>
           <!-- main_reason_middle-->
-          <div class="main_reason">
+          <div class="main_reason third-main_reason">
             <div class="main_reason_left">
              <picture class="main_reason_left_img">
                       <source media="(min-width: 768px)" src="/assets/image/reason03_pc.jpg">
                       <img src="/assets/image/reason03_sp.jpg" alt="">
                     </picture>
-            </div>
-            <div class="main_reason_right">
-              <p class="main_reason_right_point">
+            </div> 
+            <div class="main_reason_right third-main_reason_right">
+              <p class="third-main_reason_right_point">
                 Point<span class="one">3</span>
               </p>
               <h3 class="main_reason_right_h3">
@@ -326,18 +323,9 @@
     <footer>
       <small>&copy;copyright© 2023 Kira-Kira Juku All Rights Reserved.</small>
     </footer>
-     
+    
     <script src="/assets/script/jquery-3.7.1.min.js"></script>
-    <script src="/assets/script/main.js"></script>
-    <script>
-  const hamburger = document.getElementById('js-hamburger-menu');
-  const nav = document.querySelector('.nav_header');
-  const body = document.body;
-
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('hamburger-menu--open');
-    nav.classList.toggle('menu-open');
-  });
-</script>
+    <script src="/assets/script/main.js"> </script>
   </body>
+  
 </html>

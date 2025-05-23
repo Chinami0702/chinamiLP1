@@ -1,15 +1,9 @@
- $(function () {
-    $('#js-hamburger-menu').on('click', function () {
-      $('.nav_header').fadeIn();
-    });
-
-    // メニュー外クリックで閉じたい場合：
-    $(document).on('click', function (e) {
-      if (!$(e.target).closest('.nav_header, #js-hamburger-menu').length) {
-        $('.nav_header').fadeOut();
-      }
-    });
+$(function () {
+  $('#js-hamburger-menu, .navigation__link').on('click', function () {
+    $('.navigation').slideToggle(500)
+    $('.hamburger-menu').toggleClass('hamburger-menu--open')
   });
+});
   
 $(function () {
   $(".tab-btn").on("click", function () {
