@@ -103,7 +103,7 @@ li {
 }
 .hamburger-menu__bar:nth-child(3) {
   top: 4.5rem;
-  columns: #fff;
+  color: #fff;
 }
 .hamburger-menu--open .hamburger-menu__bar {
   top: 50%;
