@@ -237,7 +237,9 @@ li {
    margin: 0 0 0 0;
    font-weight: bold;
   }
-
+.special-li:hover{
+  opacity: .5;
+}
   .arrow-img {
     display: none; 
   }
