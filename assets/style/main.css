@@ -50,11 +50,13 @@ li {
   align-items: center;
   justify-content: space-between;
   height: 100%; 
-  /* padding: 0 1rem 0 1rem; */
+ 
 }
 @media (min-width:768px){
   .header_wrapper{
     padding: 0 1rem 0 1rem;
+    max-width: 120rem;
+    margin-inline: auto;
   }
 }
 
@@ -159,7 +161,8 @@ li {
   color: #fff;
 }
 .nav_header_list-item{
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid  rgba(255,  255, 255,0.5 );
+
   width: 80%;         /* 全体の幅を少し縮める */
   margin: 0 auto;     /* 真ん中に寄せる */
   padding: 1rem 0;
@@ -175,7 +178,7 @@ li {
   font-family: sans-serif;
   color: #005BAC;
   text-align: center ;
-  padding-left: 5rem;
+  padding:1rem 0 1rem 5rem;
 }
 
 @media (min-width: 1400px){
@@ -188,8 +191,8 @@ li {
 @media (min-width: 768px) {
   .header{
     height: 10.1rem;
-    max-width: 120rem;
-    margin-inline: auto;
+    
+    
     align-items: center;
     justify-content: center;
   }
@@ -198,7 +201,7 @@ li {
   height: 4.5rem;
 }
   .navigation {
-    display: block; /* 表示する */
+    display: block !important;
     position: static; /* PCでは絶対位置をやめる */
     background: none; /* 背景を透明に */
     width: auto;
