@@ -705,8 +705,12 @@ span {
 
 @media (min-width: 768px) {
     .third-main_reason {
-        padding: 4.6rem 0rem 1rem 0rem
+        padding: 4.6rem 0rem 1rem 0rem;
+        display: flex;
+        flex-direction: row;
     }
+}
+@media (min-width: 768px) {  
 .main_reason_left {
         width: 50%;
     }
