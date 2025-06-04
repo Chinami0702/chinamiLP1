@@ -707,14 +707,10 @@ span {
     .third-main_reason {
         padding: 4.6rem 0rem 1rem 0rem
     }
-
-    .main_reason_left {
+.main_reason_left {
         width: 50%;
     }
-
-
-
-    .main_reason_left_img img {
+.main_reason_left_img img {
         width: 56rem;
         height: 34.6rem;
         object-fit: cover;
@@ -750,7 +746,7 @@ span {
 }
 
 .third-main_reason_right {
-    width: 50%;
+    width: 100%;
     padding: 1rem 0 0 1.2rem;
 }
 
@@ -770,8 +766,7 @@ span {
         color: #F11F8D;
         line-height: 1;
     }
-
-    .third-main_reason_right_point {
+ .third-main_reason_right_point {
         font-size: 2.8rem;
         font-family: Poppins;
         font-weight: Bold;
@@ -1131,7 +1126,7 @@ margin: 1.4rem 0 0rem 0;
 
 /* 費用 */
 .main_cost {
-    padding: 5.7rem 1rem 2rem 1rem;
+  padding: 5.7rem 1rem 3.5rem 1rem;
 }
 
 @media (min-width:768px) {
@@ -1301,7 +1296,7 @@ margin: 1.4rem 0 0rem 0;
     font-weight: bold;
     color: #fff;
     top: 0;
-    left: 2rem;
+    left: 1.6rem;
     bottom: 0;
     right: 0;
     z-index: 2;
