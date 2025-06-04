@@ -637,12 +637,9 @@ html {
 
 .main_reason {
     width: 100%;
-    padding: 1.4rem 1rem .7rem 1rem;
+  padding: 1.4rem 1rem 1.555rem 1rem;
 }
 
-.main_reason:nth-child(3) {
-    padding: 1.8rem 1rem .7rem 1rem;
-}
 
 @media (min-width: 768px) {
     .main_reason {
@@ -650,14 +647,14 @@ html {
         padding: 2rem 0rem 1rem 0rem;
         display: flex;
     }
-
-
-    .main_reason:nth-last-child(2) {
-        flex-direction: row-reverse;
-        padding: 4rem 0rem 0 0rem;
-        gap: 2rem;
-    }
-
+   .second-main_reason{
+    flex-direction: row-reverse;
+    padding: 4rem 0rem 0 0rem;
+    gap: 2rem;
+  }
+  .second-main_reason_right_subtitle{
+    margin-bottom: 1rem;
+  }
 }
 
 span {
@@ -681,6 +678,7 @@ span {
     font-weight: bold;
     font-style: italic;
     color: #F11F8D;
+    margin: 0 0 .3777rem 0
 }
 
 .main_reason_right_point.second {
@@ -704,11 +702,14 @@ span {
 }
 
 @media (min-width: 768px) {
-    .third-main_reason {
+      .third-main_reason {
+        width: 116rem;
+        margin: 0 auto;
         padding: 4.6rem 0rem 1rem 0rem;
         display: flex;
         flex-direction: row;
-    }
+        gap: 2rem;
+}
 }
 @media (min-width: 768px) {  
 .main_reason_left {
@@ -723,6 +724,17 @@ span {
         margin: 0;
     }
 }
+@media (min-width:768px){
+    .main_reason_left_img img {
+            width: 56rem;
+    height: 34.6rem;
+    object-fit: cover;
+    display: block;
+    border-radius: 1.2rem;
+        margin: 0;
+    }
+
+}
 
 .main_reason_right {
     width: 100%;
@@ -736,12 +748,12 @@ span {
     }
 }
 
-.main_reason_right:nth-of-type(2) {
-    padding: 1.6rem .6rem 1rem .6rem;
+.third-main_reason{
+    margin: 0rem 0 0 0;
 }
 
 @media (min-width:768px) {
-    .main_reason_right:nth-of-type(2) {
+    .first-main_reason_right{
         padding: 2rem .6rem 1rem 2rem;
     }
     .main_reasons_box .main_reason:nth-of-type(2) .second-main_reason_right {
@@ -751,11 +763,19 @@ span {
 
 .third-main_reason_right {
     width: 100%;
-    padding: 1rem 0 0 1.2rem;
+   padding: 1.4rem .1rem 0 .7rem;
 }
-
+@media (min-width:768px){
+  .third-main_reason_right{
+   width: 50%;
+   padding: 1.6rem 0 0 1.2rem;
+} 
+}
+.second-main_reason_right_text{
+    margin: 0 0 0 .3rem;
+}
 .second-main_reason_right {
-    padding: 1.4rem 0 0 0rem;
+    padding: 1.4rem 0 0 .5rem;
 }
 
 
@@ -788,8 +808,8 @@ span {
 .main_reason_right_small-title {
     font-weight: bold;
     font-size: 2rem;
-    padding: 0 0 .8rem 0;
-    line-height: 1.6;
+    margin: 0 0 1rem 0;
+    line-height: 1.5;
 }
 
 @media (min-width: 768px) {
@@ -798,6 +818,7 @@ span {
         font-size: 2.4rem;
         line-height: 1.7;
         padding: 0 0 1.3rem 0;
+        margin: 0 0 .2rem 0;
 
     }
 }
