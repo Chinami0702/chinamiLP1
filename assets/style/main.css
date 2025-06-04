@@ -279,7 +279,7 @@ html {
     }
 
     .special-li:hover {
-        opacity: .5;
+        opacity: .6;
     }
 
     .arrow-img {
@@ -568,7 +568,7 @@ html {
 }
 
 .main_button_list_top:hover {
-    opacity: .5;
+    opacity: .6;
 }
 
 .main_button_list_middle {
@@ -576,7 +576,7 @@ html {
 }
 
 .main_button_list_middle:hover {
-    opacity: .5;
+    opacity: .6;
 }
 
 .main_button_list_bottom {
@@ -584,7 +584,7 @@ html {
 }
 
 .main_button_list_bottom:hover {
-    opacity: .5;
+    opacity: .6;
 }
 
 @media (min-width: 768px) {
@@ -887,7 +887,7 @@ span {
 }
 
 .button:hover {
-    opacity: .5;
+    opacity: .6;
 }
 
 @media (min-width: 768px) {
